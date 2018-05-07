@@ -16,6 +16,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var myOtherLabel: UILabel!
     
+    @IBOutlet weak var myImageView: UIImageView!
+    
+    /*@IBAction func transformImage(_ sender: UIPinchGestureRecognizer) {
+        self.myImageView.transform =  CGAffineTransform(scaleX: sender.scale, y: sender.scale)
+    }*/
     
     override func viewDidLoad() {
         super.viewDidLoad()

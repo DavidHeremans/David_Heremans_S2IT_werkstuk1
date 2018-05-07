@@ -10,16 +10,18 @@ import Foundation
 
 class Persoon {
     var naam:String
-    
     var voornaam:String
+    var image:String
     
     init() {
         naam = ""
         voornaam = ""
+        image = ""
     }
     
-    init(naam: String, voornaam:String){
+    init(naam: String, voornaam:String, image:String){
         self.naam = naam
         self.voornaam = voornaam
+        self.image = image
     }
 }

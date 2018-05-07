@@ -30,19 +30,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dwu-0w-vtL">
+                                <rect key="frame" x="67" y="382" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bjQ-dz-ZA7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="137" id="6cc-9s-kiL"/>
+                            <constraint firstItem="Dwu-0w-vtL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="Fc1-2O-VGN"/>
                             <constraint firstItem="bjQ-dz-ZA7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SgF-03-09y"/>
+                            <constraint firstItem="Dwu-0w-vtL" firstAttribute="top" secondItem="dpA-6y-28T" secondAttribute="bottom" constant="54" id="bJL-e1-4bE"/>
+                            <constraint firstItem="Dwu-0w-vtL" firstAttribute="centerX" secondItem="dpA-6y-28T" secondAttribute="centerX" id="dJz-Ih-Xdg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Dwu-0w-vtL" secondAttribute="bottom" constant="157" id="pcK-rf-n35"/>
                             <constraint firstItem="bjQ-dz-ZA7" firstAttribute="leading" secondItem="dpA-6y-28T" secondAttribute="leading" id="r4f-W3-ac2"/>
                             <constraint firstItem="dpA-6y-28T" firstAttribute="top" secondItem="bjQ-dz-ZA7" secondAttribute="bottom" constant="85" id="sUj-or-8Ka"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="myImageView" destination="Dwu-0w-vtL" id="t9L-IR-ktW"/>
                         <outlet property="myLabel" destination="dpA-6y-28T" id="BIl-EC-Jjt"/>
                         <outlet property="myOtherLabel" destination="bjQ-dz-ZA7" id="fHP-qo-ZEU"/>
+                        <outletCollection property="dd" destination="Dwu-0w-vtL" collectionClass="NSMutableArray" id="t8X-VO-1xI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
