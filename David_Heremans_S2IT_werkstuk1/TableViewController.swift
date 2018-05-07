@@ -10,11 +10,18 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
-    var personen = ["David"]
+    
+     var personen = [Persoon]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        let persoon1 = Persoon(naam: "Heremans", voornaam: "David")
+        let persoon2 = Persoon(naam: "Frans", voornaam: "Nice")
+        
+        personen.append(persoon1)
+        personen.append(persoon2)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -43,8 +50,8 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
 
-        cell.textLabel?.text = self.personen[indexPath.row]
-        cell.detailTextLabel?.text = "Heremans"
+        cell.textLabel?.text = self.personen[indexPath.row].naam
+        cell.detailTextLabel?.text = self.personen[indexPath.row].voornaam
         // Configure the cell...
 
         return cell
@@ -86,14 +93,19 @@ class TableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+       
+        if segue.identifier == "naarPersoonView"
+        {
+            let vc = segue.destination as! ViewController
+            let indexPath = self.tableView.indexPathForSelectedRow
+            vc.persoon = personen[(indexPath?.row)!]
+        }
     }
-    */
+    
 
 }

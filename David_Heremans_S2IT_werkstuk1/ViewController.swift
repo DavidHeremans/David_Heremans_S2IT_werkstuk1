@@ -10,12 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var persoon = Persoon()
+    
     @IBOutlet weak var myLabel: UILabel!
     
     @IBOutlet weak var myOtherLabel: UILabel!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.myLabel.text = persoon.naam
+        self.myOtherLabel.text = persoon.voornaam
         // Do any additional setup after loading the view, typically from a nib.
     }
 

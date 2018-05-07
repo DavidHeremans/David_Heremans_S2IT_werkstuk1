@@ -15,6 +15,7 @@
 		E9A4D7E320A08D0100E358A0 /* David_Heremans_S2IT_werkstuk1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A4D7E220A08D0100E358A0 /* David_Heremans_S2IT_werkstuk1Tests.swift */; };
 		E9A4D7EE20A08D0100E358A0 /* David_Heremans_S2IT_werkstuk1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A4D7ED20A08D0100E358A0 /* David_Heremans_S2IT_werkstuk1UITests.swift */; };
 		E9A4D7FC20A09A2900E358A0 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A4D7FB20A09A2900E358A0 /* TableViewController.swift */; };
+		E9A4D7FE20A09F1E00E358A0 /* persoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A4D7FD20A09F1E00E358A0 /* persoon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		E9A4D7ED20A08D0100E358A0 /* David_Heremans_S2IT_werkstuk1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = David_Heremans_S2IT_werkstuk1UITests.swift; sourceTree = "<group>"; };
 		E9A4D7EF20A08D0100E358A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9A4D7FB20A09A2900E358A0 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		E9A4D7FD20A09F1E00E358A0 /* persoon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = persoon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				E9A4D7CF20A08D0100E358A0 /* ViewController.swift */,
 				E9A4D7D120A08D0100E358A0 /* Main.storyboard */,
 				E9A4D7FB20A09A2900E358A0 /* TableViewController.swift */,
+				E9A4D7FD20A09F1E00E358A0 /* persoon.swift */,
 				E9A4D7D420A08D0100E358A0 /* Assets.xcassets */,
 				E9A4D7D620A08D0100E358A0 /* LaunchScreen.storyboard */,
 				E9A4D7D920A08D0100E358A0 /* Info.plist */,
@@ -264,6 +267,7 @@
 			files = (
 				E9A4D7D020A08D0100E358A0 /* ViewController.swift in Sources */,
 				E9A4D7FC20A09A2900E358A0 /* TableViewController.swift in Sources */,
+				E9A4D7FE20A09F1E00E358A0 /* persoon.swift in Sources */,
 				E9A4D7CE20A08D0100E358A0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
