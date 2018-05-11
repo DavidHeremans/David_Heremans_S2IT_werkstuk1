@@ -48,8 +48,21 @@
                                     <constraint firstAttribute="height" constant="128" id="9b3-71-jr5"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKY-Wj-X2I">
-                                <rect key="frame" x="285" y="217" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKY-Wj-X2I">
+                                <rect key="frame" x="67" y="323" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdL-ce-c6f">
+                                <rect key="frame" x="142" y="387" width="91" height="30"/>
+                                <state key="normal" title="Bekijk locatie"/>
+                                <connections>
+                                    <segue destination="S3a-1I-KeS" kind="show" id="FUW-CY-xy3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38l-VK-hQS">
+                                <rect key="frame" x="67" y="267" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -62,20 +75,25 @@
                             <constraint firstItem="bjQ-dz-ZA7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="CTz-R4-Lcn"/>
                             <constraint firstItem="bjQ-dz-ZA7" firstAttribute="baseline" secondItem="dpA-6y-28T" secondAttribute="baseline" id="FSI-Dz-K15"/>
                             <constraint firstItem="nfd-jV-PD2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MGj-Jw-XLd"/>
-                            <constraint firstItem="ZKY-Wj-X2I" firstAttribute="leading" secondItem="nfd-jV-PD2" secondAttribute="leading" constant="218" id="OFl-Ug-Jgo"/>
+                            <constraint firstItem="ZKY-Wj-X2I" firstAttribute="leading" secondItem="nfd-jV-PD2" secondAttribute="leading" id="OFl-Ug-Jgo"/>
+                            <constraint firstItem="zdL-ce-c6f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="323" id="QC7-zg-nc3"/>
                             <constraint firstItem="8Rg-iA-Ae2" firstAttribute="top" secondItem="ikD-Yi-KPC" secondAttribute="bottom" constant="34" id="UQ5-Wb-qf1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dpA-6y-28T" secondAttribute="trailing" constant="48" id="aR5-fl-dLz"/>
                             <constraint firstAttribute="bottom" secondItem="nfd-jV-PD2" secondAttribute="bottom" constant="20" symbolic="YES" id="eeF-Ra-j44"/>
-                            <constraint firstItem="ZKY-Wj-X2I" firstAttribute="top" secondItem="8Rg-iA-Ae2" secondAttribute="bottom" constant="-22" id="h0E-rb-QjB"/>
+                            <constraint firstItem="ZKY-Wj-X2I" firstAttribute="top" secondItem="8Rg-iA-Ae2" secondAttribute="bottom" constant="42" id="h0E-rb-QjB"/>
                             <constraint firstItem="bjQ-dz-ZA7" firstAttribute="leading" secondItem="ikD-Yi-KPC" secondAttribute="leading" id="jJ4-wk-EN0"/>
-                            <constraint firstItem="8Rg-iA-Ae2" firstAttribute="leading" secondItem="ZKY-Wj-X2I" secondAttribute="leading" constant="-218" id="r4m-k8-vei"/>
+                            <constraint firstItem="38l-VK-hQS" firstAttribute="top" secondItem="8Rg-iA-Ae2" secondAttribute="bottom" constant="28" id="jYp-MD-lp6"/>
+                            <constraint firstItem="zdL-ce-c6f" firstAttribute="centerX" secondItem="nfd-jV-PD2" secondAttribute="centerX" id="jh4-IH-ftP"/>
+                            <constraint firstItem="8Rg-iA-Ae2" firstAttribute="leading" secondItem="ZKY-Wj-X2I" secondAttribute="leading" id="r4m-k8-vei"/>
                             <constraint firstItem="ikD-Yi-KPC" firstAttribute="top" secondItem="bjQ-dz-ZA7" secondAttribute="bottom" constant="38" id="rnY-V3-oRF"/>
+                            <constraint firstItem="38l-VK-hQS" firstAttribute="leading" secondItem="8Rg-iA-Ae2" secondAttribute="leading" id="xJW-wL-Sfu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="adres" destination="ikD-Yi-KPC" id="ZYV-1v-vTn"/>
-                        <outlet property="gpsCoordinaten" destination="8Rg-iA-Ae2" id="6Ot-Wy-rLk"/>
+                        <outlet property="coordinaatBreedte" destination="8Rg-iA-Ae2" id="aNr-pt-h6O"/>
+                        <outlet property="coordinaatLengte" destination="38l-VK-hQS" id="RkF-zD-UA5"/>
                         <outlet property="myImageView" destination="nfd-jV-PD2" id="b4Y-ga-gDV"/>
                         <outlet property="myLabel" destination="dpA-6y-28T" id="BIl-EC-Jjt"/>
                         <outlet property="myOtherLabel" destination="bjQ-dz-ZA7" id="fHP-qo-ZEU"/>
@@ -85,6 +103,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2120.8000000000002" y="115.59220389805098"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="D2f-26-9fL">
+            <objects>
+                <viewController id="S3a-1I-KeS" customClass="mapViewController" customModule="David_Heremans_S2IT_werkstuk1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t07-a3-Qvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vxf-lF-nly">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Mf3-VV-JLx"/>
+                    </view>
+                    <connections>
+                        <outlet property="myMapView" destination="Vxf-lF-nly" id="4gv-t2-1FO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ord-p8-yOU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2946.4000000000001" y="116.49175412293854"/>
         </scene>
         <!--Personen-->
         <scene sceneID="luC-5d-hBj">

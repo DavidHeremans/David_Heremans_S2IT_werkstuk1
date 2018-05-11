@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B470366520A5C631007A5639 /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B470366420A5C631007A5639 /* mapViewController.swift */; };
+		B470366720A5C6AC007A5639 /* myAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B470366620A5C6AC007A5639 /* myAnnotation.swift */; };
 		E9A4D7CE20A08D0100E358A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A4D7CD20A08D0100E358A0 /* AppDelegate.swift */; };
 		E9A4D7D020A08D0100E358A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A4D7CF20A08D0100E358A0 /* ViewController.swift */; };
 		E9A4D7D320A08D0100E358A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9A4D7D120A08D0100E358A0 /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B470366420A5C631007A5639 /* mapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
+		B470366620A5C6AC007A5639 /* myAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myAnnotation.swift; sourceTree = "<group>"; };
 		E9A4D7CA20A08D0100E358A0 /* David_Heremans_S2IT_werkstuk1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = David_Heremans_S2IT_werkstuk1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A4D7CD20A08D0100E358A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9A4D7CF20A08D0100E358A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 				E9A4D7CD20A08D0100E358A0 /* AppDelegate.swift */,
 				E9A4D7CF20A08D0100E358A0 /* ViewController.swift */,
 				E9A4D7D120A08D0100E358A0 /* Main.storyboard */,
+				B470366420A5C631007A5639 /* mapViewController.swift */,
+				B470366620A5C6AC007A5639 /* myAnnotation.swift */,
 				E9A4D7FB20A09A2900E358A0 /* TableViewController.swift */,
 				E9A4D7FD20A09F1E00E358A0 /* persoon.swift */,
 				E9A4D7D420A08D0100E358A0 /* Assets.xcassets */,
@@ -266,6 +272,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9A4D7D020A08D0100E358A0 /* ViewController.swift in Sources */,
+				B470366520A5C631007A5639 /* mapViewController.swift in Sources */,
+				B470366720A5C6AC007A5639 /* myAnnotation.swift in Sources */,
 				E9A4D7FC20A09A2900E358A0 /* TableViewController.swift in Sources */,
 				E9A4D7FE20A09F1E00E358A0 /* persoon.swift in Sources */,
 				E9A4D7CE20A08D0100E358A0 /* AppDelegate.swift in Sources */,

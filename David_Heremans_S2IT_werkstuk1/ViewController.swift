@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import MapKit
 
-class ViewController: UIViewController {
+
+class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
     var persoon = Persoon()
     
@@ -19,9 +21,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var adres: UILabel!
     
     
-    @IBOutlet weak var gpsCoordinaten: UILabel!
+    @IBOutlet weak var coordinaatBreedte: UILabel!
     
-   
+    
+    @IBOutlet weak var coordinaatLengte: UILabel!
+    
+    
     @IBOutlet weak var telefoon: UILabel!
     
     
@@ -36,12 +41,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
+        
+        
         self.myLabel.text = persoon.naam
         self.myOtherLabel.text = persoon.voornaam
         self.myImageView.image = UIImage(named: persoon.image)
         self.telefoon.text = persoon.telefoonnummer
         self.adres.text = persoon.adres
-        self.gpsCoordinaten.text = persoon.gpsCoordinaten
+        self.coordinaatBreedte.text = persoon.coordinaatBreedte
+        self.coordinaatLengte.text = persoon.coordinaatBreedte
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -50,6 +60,8 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+  
+    
 
 
 }

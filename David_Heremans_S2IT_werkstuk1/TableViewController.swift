@@ -15,10 +15,14 @@ class TableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
         
-        let persoon1 = Persoon(naam: "Heremans", voornaam: "David", image:"David.jpg", adres: "M. Lefevrelaan 7 3012 Wilsele", gpsCoordinaten:"Hier", telefoonnummer:"1234")
-        let persoon2 = Persoon(naam: "Frans", voornaam: "Nice", image:"David.jpg", adres: "M. Lefevrelaan 7 3012 Wilsele", gpsCoordinaten:"Hier", telefoonnummer:"1234789567")
+        let persoon1 = Persoon(naam: "Heremans", voornaam: "David", image:"David.jpg", adres: "M. Lefevrelaan 7 3012 Wilsele",coordinaatBreedte:"50.86536217231195", coordinaatLengte:"4.7040448531249694", telefoonnummer:"1234")
+        
+        
+        let persoon2 = Persoon(naam: "De Tafel", voornaam: "Jan", image:"man.jpg", adres: "Ganzenstraat 1 3001 Heverlee", coordinaatBreedte:"50.86536217231195", coordinaatLengte:"4.7040448531249694", telefoonnummer:"0438976532")
         
         personen.append(persoon1)
         personen.append(persoon2)

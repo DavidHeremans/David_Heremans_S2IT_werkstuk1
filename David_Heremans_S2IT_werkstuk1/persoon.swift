@@ -9,29 +9,34 @@
 import Foundation
 
 class Persoon {
+    
     var naam:String
     var voornaam:String
     var image:String
     var adres:String
-    var gpsCoordinaten:String
+    var coordinaatBreedte:String
+    var coordinaatLengte:String
+
     var telefoonnummer:String
     
     
-    init() {
+     init() {
         naam = ""
         voornaam = ""
         image = ""
         adres = ""
-        gpsCoordinaten = ""
+        coordinaatBreedte = ""
+        coordinaatLengte = ""
         telefoonnummer = ""
     }
     
-    init(naam: String, voornaam:String, image:String, adres:String, gpsCoordinaten:String, telefoonnummer:String){
+    init( naam: String, voornaam:String, image:String, adres:String, coordinaatBreedte:String, coordinaatLengte:String, telefoonnummer:String){
         self.naam = naam
         self.voornaam = voornaam
         self.image = image
         self.adres = adres
-        self.gpsCoordinaten = gpsCoordinaten
+        self.coordinaatBreedte = coordinaatBreedte
+        self.coordinaatLengte = coordinaatLengte
         self.telefoonnummer = telefoonnummer
     }
 }
