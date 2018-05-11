@@ -14,15 +14,20 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var myLabel: UILabel!
     
-    @IBOutlet weak var telefoon: UILabel!
-    
-    @IBOutlet weak var gpsCoordinaten: UILabel!
+     @IBOutlet weak var myOtherLabel: UILabel!
     
     @IBOutlet weak var adres: UILabel!
     
-    @IBOutlet weak var myOtherLabel: UILabel!
     
-   @IBOutlet weak var myImageView: UIImageView!
+    @IBOutlet weak var gpsCoordinaten: UILabel!
+    
+   
+    @IBOutlet weak var telefoon: UILabel!
+    
+    
+    @IBOutlet weak var myImageView: UIImageView!
+    
+    
     
    @IBAction func transformImage(_ sender: UIPinchGestureRecognizer) {
         self.myImageView.transform =  CGAffineTransform(scaleX: sender.scale, y: sender.scale)

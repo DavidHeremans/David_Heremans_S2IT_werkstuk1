@@ -18,7 +18,7 @@ class TableViewController: UITableViewController {
 
         
         let persoon1 = Persoon(naam: "Heremans", voornaam: "David", image:"David.jpg", adres: "M. Lefevrelaan 7 3012 Wilsele", gpsCoordinaten:"Hier", telefoonnummer:"1234")
-        let persoon2 = Persoon(naam: "Frans", voornaam: "Nice", image:"David.jpg", adres: "M. Lefevrelaan 7 3012 Wilsele", gpsCoordinaten:"Hier", telefoonnummer:"1234")
+        let persoon2 = Persoon(naam: "Frans", voornaam: "Nice", image:"David.jpg", adres: "M. Lefevrelaan 7 3012 Wilsele", gpsCoordinaten:"Hier", telefoonnummer:"1234789567")
         
         personen.append(persoon1)
         personen.append(persoon2)
@@ -52,7 +52,7 @@ class TableViewController: UITableViewController {
 
         cell.textLabel?.text = self.personen[indexPath.row].naam
         cell.detailTextLabel?.text = self.personen[indexPath.row].voornaam
-        cell.imageView?.image = UIImage(named: personen[indexPath.row].image)
+       cell.imageView?.image = UIImage(named: personen[indexPath.row].image)
         // Configure the cell...
 
         return cell
