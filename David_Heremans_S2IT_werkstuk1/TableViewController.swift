@@ -17,8 +17,8 @@ class TableViewController: UITableViewController {
         super.viewDidLoad()
 
         
-        let persoon1 = Persoon(naam: "Heremans", voornaam: "David", image:"David.jpg")
-        let persoon2 = Persoon(naam: "Frans", voornaam: "Nice", image:"David.jpg")
+        let persoon1 = Persoon(naam: "Heremans", voornaam: "David", image:"David.jpg", adres: "M. Lefevrelaan 7 3012 Wilsele", gpsCoordinaten:"Hier", telefoonnummer:"1234")
+        let persoon2 = Persoon(naam: "Frans", voornaam: "Nice", image:"David.jpg", adres: "M. Lefevrelaan 7 3012 Wilsele", gpsCoordinaten:"Hier", telefoonnummer:"1234")
         
         personen.append(persoon1)
         personen.append(persoon2)
