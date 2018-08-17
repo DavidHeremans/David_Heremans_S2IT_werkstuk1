@@ -6,6 +6,9 @@
 //  Copyright © 2018 HEREMANS David (s). All rights reserved.
 //
 
+
+//Gehaald uit de oefeningen
+
 import Foundation
 
 
@@ -22,10 +25,6 @@ class mapViewController: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
-        
-        // voorbeeld annotation, eentje toevoegen voor we beginnen
-        
         let coordinate:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 50.86536217231195, longitude: 4.7040448531249694)
         
         
@@ -40,7 +39,7 @@ class mapViewController: UIViewController, MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         let center = CLLocationCoordinate2D(latitude: (view.annotation?.coordinate.latitude)!, longitude: (view.annotation?.coordinate.longitude)!)
-        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02))
+        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
         
         mapView.setRegion(region, animated: true)
     }

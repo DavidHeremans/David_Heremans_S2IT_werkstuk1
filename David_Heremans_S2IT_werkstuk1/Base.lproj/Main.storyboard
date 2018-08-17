@@ -48,12 +48,6 @@
                                     <constraint firstAttribute="height" constant="128" id="9b3-71-jr5"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKY-Wj-X2I">
-                                <rect key="frame" x="67" y="323" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdL-ce-c6f">
                                 <rect key="frame" x="142" y="387" width="91" height="30"/>
                                 <state key="normal" title="Bekijk locatie"/>
@@ -63,6 +57,12 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38l-VK-hQS">
                                 <rect key="frame" x="67" y="267" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKY-Wj-X2I">
+                                <rect key="frame" x="67" y="337" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -80,7 +80,7 @@
                             <constraint firstItem="8Rg-iA-Ae2" firstAttribute="top" secondItem="ikD-Yi-KPC" secondAttribute="bottom" constant="34" id="UQ5-Wb-qf1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dpA-6y-28T" secondAttribute="trailing" constant="48" id="aR5-fl-dLz"/>
                             <constraint firstAttribute="bottom" secondItem="nfd-jV-PD2" secondAttribute="bottom" constant="20" symbolic="YES" id="eeF-Ra-j44"/>
-                            <constraint firstItem="ZKY-Wj-X2I" firstAttribute="top" secondItem="8Rg-iA-Ae2" secondAttribute="bottom" constant="42" id="h0E-rb-QjB"/>
+                            <constraint firstItem="ZKY-Wj-X2I" firstAttribute="top" secondItem="8Rg-iA-Ae2" secondAttribute="bottom" constant="98" id="h0E-rb-QjB"/>
                             <constraint firstItem="bjQ-dz-ZA7" firstAttribute="leading" secondItem="ikD-Yi-KPC" secondAttribute="leading" id="jJ4-wk-EN0"/>
                             <constraint firstItem="38l-VK-hQS" firstAttribute="top" secondItem="8Rg-iA-Ae2" secondAttribute="bottom" constant="28" id="jYp-MD-lp6"/>
                             <constraint firstItem="zdL-ce-c6f" firstAttribute="centerX" secondItem="nfd-jV-PD2" secondAttribute="centerX" id="jh4-IH-ftP"/>

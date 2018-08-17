@@ -51,7 +51,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         self.telefoon.text = persoon.telefoonnummer
         self.adres.text = persoon.adres
         self.coordinaatBreedte.text = persoon.coordinaatBreedte
-        self.coordinaatLengte.text = persoon.coordinaatBreedte
+        self.coordinaatLengte.text = persoon.coordinaatLengte
         
         // Do any additional setup after loading the view, typically from a nib.
     }

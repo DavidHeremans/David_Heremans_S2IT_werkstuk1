@@ -19,13 +19,16 @@ class TableViewController: UITableViewController {
         
 
         
-        let persoon1 = Persoon(naam: "Heremans", voornaam: "David", image:"David.jpg", adres: "M. Lefevrelaan 7 3012 Wilsele",coordinaatBreedte:"50.86536217231195", coordinaatLengte:"4.7040448531249694", telefoonnummer:"1234")
+        let persoon1 = Persoon(naam: "Heremans", voornaam: "David", image:"David.jpg", adres: "M. Lefevrelaan 7 3012 Wilsele",coordinaatBreedte:"50.86536217231195", coordinaatLengte:"4.7040448531249694", telefoonnummer:"0489244500")
         
         
         let persoon2 = Persoon(naam: "De Tafel", voornaam: "Jan", image:"man.jpg", adres: "Ganzenstraat 1 3001 Heverlee", coordinaatBreedte:"50.86536217231195", coordinaatLengte:"4.7040448531249694", telefoonnummer:"0438976532")
         
+        let persoon3 = Persoon(naam: "Vanboven", voornaam: "bert", image: "andereman.jpg", adres: "Bosweg 45 3000 Leuven", coordinaatBreedte: "50.86536217231195", coordinaatLengte: "4.7040448531249694", telefoonnummer: "0487654326")
+        
         personen.append(persoon1)
         personen.append(persoon2)
+        personen.append(persoon3)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
